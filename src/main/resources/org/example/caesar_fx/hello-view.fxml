@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="496.0" maxWidth="668" minHeight="496" minWidth="668" prefHeight="678.0" prefWidth="668.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.caesar_fx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <FlowPane alignment="TOP_RIGHT" prefHeight="34.0" prefWidth="456.0">
+      <children>
+         <Label prefHeight="18.0" prefWidth="89.0" text="Введите ключ" />
+         <TextField fx:id="key" prefHeight="25.0" prefWidth="81.0" />
+      </children>
+   </FlowPane>
+   <FlowPane alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="629.0">
+      <children>
+         <Label alignment="TOP_RIGHT" prefHeight="131.0" prefWidth="133.0" text="Введите текст:  " />
+         <TextArea fx:id="inText" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="127.0" prefWidth="479.0" wrapText="true" />
+      </children>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <VBox.margin>
+         <Insets top="40.0" />
+      </VBox.margin>
+   </FlowPane>
+   <ButtonBar prefHeight="41.0" prefWidth="644.0">
+     <buttons>
+         <Button mnemonicParsing="false" onAction="#decodingButtonClick" prefHeight="25.0" text="Расшифровать" />
+          <Button mnemonicParsing="false" onAction="#brutForceButtonClick" prefHeight="25.0" prefWidth="255.0" text="Взломать" />
+       <Button mnemonicParsing="false" onAction="#codingButtonClick" prefHeight="25.0" prefWidth="242.0" text="Зашифровать" />
+     </buttons>
+   </ButtonBar>
+   <TextArea fx:id="outText" editable="false" prefHeight="200.0" prefWidth="200.0" text="fsdfsdf" />
+
+</VBox>
